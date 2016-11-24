@@ -12,7 +12,7 @@ app.listen(port);
 console.log("app is listening on port: "+port);
 
 app.get("/",(req,res) => {
-  res.send("läuft!");
+  res.send("it works");
 });
 app.get("/contact",(req,res) =>{
   res.send("contact"+this);

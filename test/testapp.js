@@ -21,4 +21,21 @@ describe("App funcitonality", function(){
       done();
     });
   });
+
+  it("returns content", function(done) {
+    request(url, function(error, response, body) {
+      expect(body).to.equal("it works");
+      done();
+    });
+  });
+
+  it("returns content type", function(done) {
+    request(url, function(error, response, body) {
+      expect(body).to.be.a("String");
+      done();
+    });
+  });
+
+
+
 });
