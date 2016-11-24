@@ -4,8 +4,9 @@
 
 var express=require('express');//returns a function
 var bodyParser=require('body-parser');
-var app=express();
+var app=module.exports=express();
 var port=process.env.PORT || 3000;
+
 
 app.listen(port);
 console.log("app is listening on port: "+port);
