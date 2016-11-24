@@ -22,14 +22,3 @@ describe("App funcitonality", function(){
     });
   });
 });
-/*
-describe("Material App test", function(){
-  app.get("/",(req,res) => {
-  var test1 = res.send("läuft!");
-  console.log("llllllog"+test1);
-  });
-  it("the response is a string", function(){
-    expect(test1).to.be.a("string");
-  });
-});
-*/
