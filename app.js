@@ -19,6 +19,6 @@ app.get("/contact",(req,res) =>{
   res.sendFile(__dirname+"/contact.html");
 });//route contact page
 app.get("/profile/:name", function(req,res){
-  var data= {age:30, job:"lawyer"}, data2= {age:90, job:"granny"};
+  var data= {age:30, job:"lawyer", hobbies:["working", "hustlin", "learnin"]};
   res.render("profile", {person: req.params.name, data:data});//render with a view template engine
-});//set up dynamic routes with render 
+});//set up dynamic routes with render
