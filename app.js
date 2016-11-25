@@ -17,7 +17,7 @@ app.get("/",(req,res) => {
   res.render("index");
 });//route home directory
 app.get("/contact",(req,res) =>{
-  res.render("contact");
+  res.render("contact", {qs:req.query});
 });//route contact page
 app.get("/profile/:name", function(req,res){
   var data= {age:30, job:"lawyer", hobbies:["working", "hustlin", "learnin"]};
