@@ -13,7 +13,10 @@ console.log("app is listening on port: "+port);
 
 app.get("/",(req,res) => {
   res.send("it works");
-});
+});//route home directory
 app.get("/contact",(req,res) =>{
-  res.send("contact"+this);
-});
+  res.send("contact");
+});//route contact page
+app.get("/profile/:name", function(req,res){
+  res.send("You requested the profile of "+req.params.name);//display the id using params
+});//set up dynamic routes
