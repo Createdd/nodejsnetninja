@@ -5,23 +5,14 @@
     <title>Test Site</title>
     <style>
       body{background: silver; color:red; text-align:center;}
+      ul{list-style-type:none;}
     </style>
   </head>
 
   <body>
     <% include partials/nav.ejs %>
-    <h1>WContact</h1>
+    <h1>CONTACT TEMPLATE</h1>
     <p>Lorem ipsum dolor sit amet, officia deserunt mollit anim id est laborum.</p>
-    <p>
-      <%= qs.person %>
-    </p>
-
-    <form id="contact-form" method="POST" action="/contact">
-        <input type="text" name="name" id="name" placeholder="Name" value="<%= qs.person%>"/>
-        <input type="email" name="email" id="email" placeholder="Email" value="<%= qs.dept%>"/>
-        <textarea name="msg" id="msg" placeholder="Message"></textarea>
-        <input type="submit" name="submit" id="submit" value="Send message"/>
-    </form>
 
 
   </body>

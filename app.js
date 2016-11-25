@@ -13,10 +13,10 @@ app.listen(port);
 console.log("app is listening on port: "+port);
 
 app.get("/",(req,res) => {
-  res.sendFile(__dirname+"/index.html");
+  res.render("index");
 });//route home directory
 app.get("/contact",(req,res) =>{
-  res.sendFile(__dirname+"/contact.html");
+  res.render("contact");
 });//route contact page
 app.get("/profile/:name", function(req,res){
   var data= {age:30, job:"lawyer", hobbies:["working", "hustlin", "learnin"]};
