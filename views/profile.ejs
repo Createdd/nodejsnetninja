@@ -10,15 +10,8 @@
   </head>
 
   <body>
-    <% include partials/nav.ejs %>
-    <h1>Profile of <%=person %></h1>
-    <p><strong>Age: <%=data.age %></strong></p>
-    <p><strong>Job: <%=data.job %></strong></p>
-    <h2>Hobbies</h2>
-    <ul>
-      <% data.hobbies.forEach(function(item){%>
-        <li><%= item %></li>
-      <%}); %>
-    </ul>
+    <h1>Welcome to the profile of <%=person%></h1>
+    <p><strong>Age: </strong><%=data.age%></p>
+    <p><strong>Job: </strong><%=data.job%></p>
   </body>
 </html>

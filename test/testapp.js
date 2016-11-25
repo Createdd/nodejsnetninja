@@ -31,7 +31,7 @@ describe("App funcitonality", function(){
 
   it("returns content type", function(done) {
     request(url, function(error, response, body) {
-      expect(body).to.be.a("String");
+      expect(body).to.be.a("html");
       done();
     });
   });
