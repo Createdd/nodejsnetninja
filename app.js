@@ -8,12 +8,16 @@ var app=module.exports=express();
 var port=process.env.PORT || 3000;
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
+
+
 app.set("view engine", "ejs");//set up ejs as vie engine
 app.use("/assets", express.static("assets"));//set up middleware that connects the css style
 
 
-app.listen(port);
-console.log("app is listening on port: "+port);
+app.listen(port, function(){
+  console.log("app is listening on port: "+port);
+});
+
 
 app.get("/",(req,res) => {
   res.render("index");
