@@ -6,7 +6,8 @@ var express=require('express');//returns a function
 var bodyParser=require('body-parser');
 var app=module.exports=express();
 var port=process.env.PORT || 3000;
-app.set("view engine", "ejs");
+app.set("view engine", "ejs");//set up ejs as vie engine
+app.use("/assets", express.static("assets"));//set up middleware that connects the css style
 
 
 app.listen(port);
